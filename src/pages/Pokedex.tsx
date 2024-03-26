@@ -21,7 +21,6 @@ const Pokedex = () => {
 
   return (
     <>
-      <Nav />
       <SearchBar />
       <section>
         <select></select>

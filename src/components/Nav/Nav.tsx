@@ -2,16 +2,16 @@ import React from 'react';
 
 const Nav = () => {
   return (
-    <header className="flex w-screen h-32 justify-between items-center">
-      <h1 className="w-1/5  flex justify-center items-center">
+    <header className="flex w-screen h-32 justify-between items-center fixed bg-white  shadow-lg shadow-black-400/50 z-[100]">
+      <h1 className="w-[25%]  flex justify-center items-center">
         <img
-          className="w-3/5w mix-width-37"
+          className="w-3/5 max-width-37"
           src="https://pokemonkorea.co.kr/img/main_logo.png"
         />
       </h1>
       <div className="w-screen max-w-7xl h-full flex justify-between px-2">
         <nav className="w-full h-full contents flex ">
-          <ul className="w-2/3 h-full flex">
+          <ul className="w-[65%] h-full flex">
             <li className="w-1/5 h-full flex flex-col items-center justify-center border">
               <img src="https://pokemonkorea.co.kr/img/icon/icon_news.png" />
               소식

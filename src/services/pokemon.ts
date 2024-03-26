@@ -35,8 +35,15 @@ export const pokemonApi = createApi({
     getPokemonByName: builder.query<PokemonType, string>({
       query: (name) => `pokemon/${name}`,
     }),
+    getPokemonKoName: builder.query({
+      query: (name) => `pokemon-species/${name}`,
+    }),
   }),
 });
 
 // 정의된 엔드포인트에서 자동으로 생성된 훅을 함수형 컴포넌트에서 사용하기 위해 export
-export const { useFetchPokemonListQuery, useGetPokemonByNameQuery } = pokemonApi;
+export const {
+  useFetchPokemonListQuery,
+  useGetPokemonByNameQuery,
+  useGetPokemonKoNameQuery,
+} = pokemonApi;

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useFetchPokemonListQuery } from '../services/pokemon';
 
-import PokemonCard from '../components/PokemonCard';
+import PokemonCard from '../components/PokemonCard/PokemonCard';
 import Nav from '../components/Nav/Nav';
 import SearchBar from '../components/SearchBar';
 
@@ -25,7 +25,7 @@ const Pokedex = () => {
       <SearchBar />
       <section>
         <select></select>
-        <ul className="flex flex-wrap clear-both">
+        <ul className="flex flex-wrap clear-both px-11 mt-11 mb-47">
           {pokemonNames.map((name: string, index: number) => (
             <PokemonCard key={`${name}_${index}`} name={name} />
           ))}
